@@ -1,0 +1,563 @@
+* {
+  box-sizing: border-box;
+}
+
+/* navigatiebalk styling alle 3 de pagina's*/
+header {
+  display: flex;
+  align-items: center; /*alles wordt verticaal gecentreerd*/
+  justify-content: flex-start; /*alles wordt aan de linkerkant gezet*/
+}
+
+header img {
+  width: 120px;
+  height: auto;
+}
+
+header nav ul {
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: medium;
+  font-weight: 900;
+  display: flex; /*hierdoor staan alle li's naast elkaar en niet onder elkaar*/
+  gap: 1em;
+}
+
+header nav a {
+  color: #ffcce1; /* kleur instellen van de about us en home en overzichtspagina */
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: white; /* kleur instellen voor als je over de woorden hovert als je van pagina wilt switchen */
+}
+
+header ul {
+  padding-left: 0;
+}
+
+/* Einde navigatiebalk styling alle 3 de pagina's*/
+
+/*Homepagina styling begin*/
+.homepagina-b {
+  background-color: black;
+}
+
+.homepagina-b h1 {
+  color: #ffcce1;
+  font-family: "Pinyon Script", cursive;
+  font-size: 4em;
+}
+
+.homepagina-b h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4em;
+}
+
+.homepagina-b p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.homepagina-b h3 {
+  color: #ffcce1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.introductie-homepage {
+  display: flex;
+  flex-direction: column; /*zorgt dat de tekst onder elkaar komt*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.introductie-homepage p {
+  margin-top: -2.9em; /* ruimte tussen de p en de h1*/
+  font-weight: 280;
+  font-size: 1.3em;
+}
+
+/* teaservideo sectie styling*/
+.teaser-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4.5em;
+}
+
+.teaser-section h2 {
+  align-items: flex-start;
+}
+
+/*de meest recenten episodes styling*/
+/*algemene styling sectie*/
+.episodes-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+
+/*tekst boven de drie afleveringen*/
+.intro-afleveringen {
+  text-align: center;
+  width: 100%;
+  margin-top: 5em;
+}
+
+.intro-afleveringen p {
+  font-size: 1.1em;
+  margin-top: -0.8em;
+}
+
+/*styling van mijn afleveringen*/
+.container-drie-afleveringen {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 0;
+  margin-top: -2em;
+}
+
+.episode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  max-width: 16.25em;
+}
+
+.episode img {
+  width: 260px;
+  height: 260px;
+  border-radius: 4%;
+  transition: transform 0.4s ease;
+}
+
+.episode img:hover {
+  transform: scale(1.1);
+}
+
+.episode-tekst h3 {
+  font-size: 0.9em;
+}
+
+.episode-tekst p {
+  font-size: 0.7em;
+  margin-top: -0.9em;
+}
+
+/* nav conatiner*/
+.nav-button {
+  display: flex; /*om de knoppen naast elkaar te krijgen*/
+  justify-content: center;
+  gap: 2em;
+  margin-top: 1.5em;
+}
+
+/*styling knop all episodes*/
+.nav-button .button {
+  display: inline-block; /*gedraagt zich als een blok maar staat in een lijn*/
+  padding: 0.625em 1.25em;
+  background-color: transparent;
+  color: #ffcce1;
+  border: 2px solid #ffcce1;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.1em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+/*hoover effect all episode knop*/
+.nav-button .button:hover {
+  background-color: pink;
+  color: black;
+}
+
+/*styling suggest a case button*/
+.nav-button .knop-disabled {
+  display: inline-block; /*gedraagt zich als een blok maar staat in een lijn*/
+  padding: 0.625em 1.25em;
+  background-color: transparent;
+  color: #ffcce1;
+  border: 2px solid #ffcce1;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.1em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+/*hoover effect suggest a case*/
+.nav-button .knop-disabled:hover {
+  background-color: pink;
+  color: black;
+}
+
+/*merch*/
+.Merch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 9em;
+}
+.Merch img {
+  width: 780px;
+  height: 400px;
+}
+
+.nav-merch {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+/*styling merch knop die je niet echt kan klikken*/
+.knop-disabled-merch {
+  display: inline-block; /*gedraagt zich als een blok maar staat in een lijn*/
+  padding: 0.625em 1.25em;
+  background-color: transparent;
+  color: #ffcce1;
+  border: 2px solid #ffcce1;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.1em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+/*hoover effect merch knop die  je niet echt kan klikken*/
+.knop-disabled-merch:hover {
+  background-color: pink;
+  color: black;
+}
+
+/*Homepage styling end*/
+
+/*Styling about us pagina*/
+.overons-body {
+  background-color: black; /*aangepaste achtergrondkleur*/
+}
+.overons-body h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2em;
+  text-align: center;
+  font-style: normal;
+  font-weight: 750;
+}
+
+.overons-body h3 {
+  color: #ffcce1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+}
+
+.overons-body h2 {
+  color: #ffcce1;
+}
+
+.overons-body p {
+  position: relative;
+
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-top: -0.8em;
+}
+.who-are-we-anderefont {
+  font-size: 3.5em;
+  text-align: center;
+  font-family: "Pinyon Script", cursive;
+  margin-top: 1.6em;
+  margin-bottom: 0.3em;
+}
+
+.About-anderefont {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 2.6em;
+  font-weight: bold;
+  margin-bottom: -0.4em;
+  margin-top: 4em;
+}
+
+.us-andere-font {
+  font-family: "Pinyon Script", cursive;
+  text-align: center;
+  font-size: 3.5em;
+  margin-bottom: 0.7em;
+  margin-top: 0.2em;
+}
+
+.what-can-you-expect-anderefont {
+  text-align: center;
+  font-family: "Pinyon Script", cursive;
+  font-size: 3.5em;
+  margin-top: 4em;
+  margin-bottom: 0.3em;
+}
+
+.boven-plaatje {
+  position: absolute;
+  top: 10.5em;
+  left: 70em; /* verplaatst de afbeelding*/
+  transform: rotate(+23deg);
+  width: 420px;
+}
+
+.boven-plaatje img {
+  height: 130px;
+  width: 260px;
+}
+
+/*about us fotos*/
+.about-us-fotos {
+  width: 90%;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  gap: 1em; /* spacing tussen de foto's */
+}
+
+.foto-msd {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 400px;
+}
+
+.foto-msd img {
+  width: 350px;
+  height: 350px;
+  border-radius: 2em;
+}
+
+.foto-msd p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 580;
+  margin-top: -0.6em;
+}
+/*End styling about us pagina*/
+
+/*overzicht pagina styling*/
+.overzicht-body {
+  background-color: black;
+}
+
+.overzicht-body h1 {
+  color: #ffcce1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+.overzicht-body h2 {
+  color: #ffcce1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1.1em;
+}
+.overzicht-body p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+article .datum-tijd-aflevering {
+  font-weight: 200;
+  font-size: 0.8em;
+}
+
+/*styling new episode out now! die boven de all episodes staat.*/
+.new-episode-container {
+  margin-left: 1.5em;
+  background-color: #111010;
+  height: 31em;
+  width: 90em;
+  border-radius: 2em;
+  padding: 1.5em;
+}
+
+/*styling tekst boven de afbelding*/
+.intro-new-episode h1 {
+  font-size: 1.6em;
+}
+
+.intro-new-episode p {
+  margin-top: -1.1em;
+}
+
+/*styling tekst naast de afbeelding*/
+.new-episode-and-tekst {
+  display: flex;
+  gap: 1em;
+  align-items: center; /*tekst komt in het midden van de afbeelding*/
+}
+
+.new-episode-and-tekst h2 {
+  font-size: 1.5em;
+}
+
+.new-episode-and-tekst p {
+  margin-top: -1.2em;
+  font-size: 0.9em;
+}
+
+.new-episode-and-tekst .datum-tijd-aflevering2 {
+  margin-top: 0.7em;
+  font-weight: 300;
+}
+
+/*afbeelding styling*/
+.new-episode-and-tekst img {
+  width: 320px;
+  height: 320px;
+  border-radius: 1em;
+}
+
+/*styling articles van section*/
+.episodes-overzicht article {
+  display: flex;
+  align-items: center;
+  gap: 1.1em;
+  padding: 1.5em;
+  border-bottom: 2px solid#ffcce1;
+}
+
+.episodes-overzicht {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.all-episodes {
+  margin-left: 1.5em;
+}
+
+.episodes-overzicht .all-episodes {
+  font-size: 1.3em;
+}
+
+.episodes-overzicht {
+  margin-top: 12em;
+}
+
+/*styling van de afbeeldingen*/
+.episodes-overzicht article img {
+  max-width: 170px;
+  border-radius: 8px;
+}
+
+.play-button {
+  margin-left: auto;
+}
+
+/*alles van de new episode out now! styling*/
+
+/*Einde overzicht pagina styling*/
+
+/*footer stying alle 3 de pagina's*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #ffcce1;
+  color: black;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-top: 10em;
+}
+
+/*linker kant styling footer*/
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.7em;
+  color: black;
+  margin-top: -0.1em;
+}
+.footer-links img {
+  width: 130px;
+  height: 130px;
+  margin-bottom: 0;
+}
+
+.afbeeldingen-socials img {
+  width: 24px;
+  height: 24px;
+  margin-top: -1em;
+}
+
+/*styling midden footer*/
+.footer-center ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer-center ul li {
+  margin: 0.9em; /*ruimte tussen de li's*/
+}
+
+.footer-center a {
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9em;
+}
+
+.footer-center span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9em;
+  color: black;
+}
+
+/* styling rechterkant footer*/
+.footer-rechts ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer-rechts ul li {
+  margin: 0.9em; /*ruimte tussen de li's*/
+}
+
+.footer-rechts a {
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9em;
+}
+
+.footer-rechts span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9em;
+  color: black;
+}
+/*einde styling footer 3 pagina's */
